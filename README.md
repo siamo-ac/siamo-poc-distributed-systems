@@ -11,7 +11,7 @@ events into a queryable view (a projection). The two sides can evolve and
 scale independently, which is why the pattern shows up in distributed
 systems.
 
-**CAP / ACID vs BASE, as it applies here.** On this single node, CAP is
+**The CAP theorem, and ACID vs BASE, as they apply here.** On this single node, CAP is
 trivially satisfied (no network partitions to survive). The interesting
 lesson is ACID vs BASE: the write side is ACID-ish — one mutex-guarded log,
 every command validated against a consistent rebuild of its aggregate. The
